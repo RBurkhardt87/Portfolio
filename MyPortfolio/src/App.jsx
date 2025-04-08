@@ -17,24 +17,26 @@ function MainLayout() {
 
   return (
     <div className="main-background">
-      <div className="wrapper">  
-        <Navbar />
-        <Header />
-        
-        
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about-me" element={<About />} />
-            <Route path="/projects" element={<ProjectList />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/media-wrangler" element={<MediaWrangler />} />
-            <Route path="/breastfeeding-app" element={<BreastFeedingApp />} />
-            <Route path="/wish-list" element={<WishList />} />
-          </Routes>
-        
+      <div className="overlay">
+        <div className="wrapper">  
+          <Navbar />
+          <Header />
+          
+          <main className="content">
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about-me" element={<About />} />
+              <Route path="/projects" element={<ProjectList />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/media-wrangler" element={<MediaWrangler />} />
+              <Route path="/breastfeeding-app" element={<BreastFeedingApp />} />
+              <Route path="/wish-list" element={<WishList />} />
+            </Routes>
+          </main>         
 
-        <Footer />  
+          <Footer />  
+        </div>
       </div>
     </div>
   );

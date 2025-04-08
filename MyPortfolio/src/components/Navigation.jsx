@@ -11,7 +11,7 @@ const Navbar = () => {
     const path = location.pathname; 
 
     function getTab() {
-        if (path === "/home") {
+        if (path === "/" || path === "/home") {
             return "one";
         }
         else if (path === "/about-me") {
@@ -33,7 +33,7 @@ const Navbar = () => {
                         display: "flex",
                         justifyContent: "space-between", 
                         alignItems: "center", 
-                        padding: "10px 20px",                                                             
+                        padding: "8px 20px",                                                             
                     }}
             >                
                 <Typography
