@@ -1,13 +1,51 @@
-import './App.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import './Styling/PageLayout.css';
+import Navbar from "./components/Navigation";
+import Footer from "./components/Footer";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import BreastFeedingApp from "./Pages/BreastFeedingApp";
+import MediaWrangler from "./Pages/MediaWrangler";
+import ProjectList from "./Pages/ProjectList";
+import Resume from "./Pages/Resume";
+import WishList from "./Pages/WishList";
 
-function App() {
-  
+
+function MainLayout() {
 
   return (
-    <>
-      <h1>My Portfolio Page</h1>
-    </>
-  )
+    <div className="main-background">
+      <div className="wrapper">  
+        <Navbar />
+        <Header />
+        
+        
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about-me" element={<About />} />
+            <Route path="/projects" element={<ProjectList />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/media-wrangler" element={<MediaWrangler />} />
+            <Route path="/breastfeeding-app" element={<BreastFeedingApp />} />
+            <Route path="/wish-list" element={<WishList />} />
+          </Routes>
+        
+
+        <Footer />  
+      </div>
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <MainLayout />
+    </BrowserRouter>
+  );
+}
+
+export default App;
