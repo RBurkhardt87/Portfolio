@@ -1,15 +1,22 @@
 
-
 .lists-container {
     display: flex;
-    
-}
-
+    justify-content: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    padding: 2rem; 
+  }
+  
 .list {
-    width: 400px;
-    margin: 20px;
-    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 450px;
+    min-width: 300px; 
+    flex-grow: 1;
+    margin-bottom: 1rem; 
 }
+  
 
 .list-header {
     text-align: center;

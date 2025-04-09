@@ -5,7 +5,7 @@
 }
 
 h1 {
-    color:  #39AD96;
+    color: rgb(18, 51, 92);
 }
 
 .header {
@@ -16,7 +16,7 @@ h1 {
     background-repeat: no-repeat;  
     display: flex;
     flex-direction: column;
-    padding: 75px;
+    padding: 100px;
     border-bottom: 4px solid rgb(255, 149, 0);
     margin: 0px;
 }
@@ -28,7 +28,7 @@ h1 {
 
 .main-background {
     width: 100vw;
-    background-color:  #dec8a298;
+    background-color:  #b7b75059;
 }
  
 .wrapper {

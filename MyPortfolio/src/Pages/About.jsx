@@ -1,8 +1,46 @@
 import React from 'react'
 import '../Styling/AboutMe.css';
 import { Card, ListItem, ListItemText, Divider, Typography, ListSubheader, List } from '@mui/material';
+import ListCard from '../components/ListCard';
 
 const About = () => {
+
+  const dna = "My Developer DNA:";
+  const traits = "The Traits Behind the Tech";
+  const dnaItems = [
+    { label: "Passionate", text: " — about building and continuously improving intuitive, people-first applications with clean, accessible interfaces" },
+    { label: "Focused", text: " — on thoughtful user experiences and refining the details that improve real-world usability" },
+    { label: "Proactive", text: " — in identifying opportunities to enhance workflows and boost team performance"},
+    { label: "Adaptable", text: " — in fast-moving, high-pressure settings, swiftly pivoting when needed while maintaining clear communication and smart problem-solving"},
+    { label: "Creative Collaborator", text: " — thrives in team environments, enjoys tackling challenges, and brings fresh, functional ideas to life using frontend technologies"}
+  ];
+
+  const toolkit = "My Developer Toolkit:";
+  const tools = "The Tools That Power the Process";
+  const toolItems = [
+    { label: "React", text: " — for building dynamic, component-based UIs"},
+    { label: "Spring Boot", text: " — Creating robust backend services"},
+    { label: "MySQL", text: " — Relational database management and query integration"},
+    { label: "Git & GitHub", text: " — Version control and collaboration"},
+    { label: "Postman", text: " — API testing and exploration"},
+    { label: "Figma", text: " — Wireframing and basic UI mockups"}, 
+    { label: "Slack & Zoom", text: " — Team communication and collaboration"}, 
+    { label: "Netlify", text: " — CURRENTLY AM STARTING ON LEARNING THIS"}
+    
+  ];
+
+  const languages = "My Developer Languages";
+  const syntax = "The Syntax Behind the Systems";
+  const languageItems = [
+    { label: "JavaScript", text: " — My go-to for building interactive UIs"},
+    { label: "Java", text: " — Used in backend services with Spring Boot"},
+    { label: "SQL", text: " — Writing queries and managing databases"},
+    { label: "HTML5", text: " — Structuring semantic, accessible content"},
+    { label: "CSS3", text: " — Styling responsive and consistent layouts"},
+  ]
+
+
+
   return (
     <div>
       <div className='about-me-story'>
@@ -23,357 +61,35 @@ const About = () => {
 
       <div className='lists-container'>
         <div className='list'>
-          <Card variant="outlined">
-            <div className="list-header">            
-              <Typography variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
-                My Developer DNA:
-              </Typography>            
-              <ListSubheader style={{ fontStyle: 'italic', fontWeight: 400 }}>
-                The Traits Behind the Tech
-              </ListSubheader>
-              <Divider style={{ marginTop: '0.5rem' }} />
-            </div>
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Passionate
-                    </Typography>
-                    {" — about building and continuously improving intuitive, people-first applications with clean, accessible interfaces"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Focused
-                    </Typography>
-                    {" — on thoughtful user experiences and refining the details that improve real-world usability"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Proactive
-                    </Typography> 
-                    {" — in identifying opportunities to enhance workflows and boost team performance"}     
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Adaptable                      
-                    </Typography>
-                    {" — in fast-moving, high-pressure settings, swiftly pivoting when needed while maintaining clear communication and smart problem-solving"}
-                  </React.Fragment>              
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Creative Collaborator
-                    </Typography> 
-                    {" — thrives in team environments, enjoys tackling challenges, and brings fresh, functional ideas to life using frontend technologies"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />       
-          </Card>
-        </div>     
-        
-        <div className='list'>
-          <Card variant="outlined">
-            <div className="list-header">            
-              <Typography variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
-                My Developer Toolkit:
-              </Typography>            
-              <ListSubheader style={{ fontStyle: 'italic', fontWeight: 400 }}>
-                The Tools That Power the Process
-              </ListSubheader>
-              <Divider style={{ marginTop: '0.5rem' }} />
-            </div>
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      React
-                    </Typography>
-                    {" — for building dynamic, component-based UIs"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Spring Boot
-                    </Typography>
-                    {" — Creating robust backend services"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      MySQL
-                    </Typography> 
-                    {" — Relational database management and query integration"}     
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Git & GitHub                      
-                    </Typography>
-                    {" — Version control and collaboration"}
-                  </React.Fragment>              
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Postman
-                    </Typography> 
-                    {" — API testing and exploration"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" /> 
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Figma
-                    </Typography> 
-                    {" — Wireframing and basic UI mockups"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Slack & Zoom
-                    </Typography> 
-                    {" — Team communication and collaboration"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />  
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Netlify
-                    </Typography> 
-                    {" — CURRENTLY AM STARTING ON LEARNING THIS"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />               
-          </Card>
+          <ListCard 
+            title={ dna }
+            subTitle={ traits }
+            items={ dnaItems }
+          />
         </div>
-
+  
         <div className='list'>
-          <Card variant="outlined">
-            <div className="list-header">            
-              <Typography variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
-                My Developer Languages:
-              </Typography>            
-              <ListSubheader style={{ fontStyle: 'italic', fontWeight: 400 }}>
-                The Syntax Behind the Systems
-              </ListSubheader>
-              <Divider style={{ marginTop: '0.5rem' }} />
-            </div>
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      JavaScript
-                    </Typography>
-                    {" — My go-to for building interactive UIs"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      Java
-                    </Typography>
-                    {" — Used in backend services with Spring Boot"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      SQL
-                    </Typography> 
-                    {" — Writing queries and managing databases"}     
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      HTML5                      
-                    </Typography>
-                    {" — Structuring semantic, accessible content"}
-                  </React.Fragment>              
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" />
-            <ListItem>
-              <ListItemText
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                      sx={{ color: 'text.primary', display: 'inline' }}
-                    >
-                      CSS3
-                    </Typography> 
-                    {" — Styling responsive and consistent layouts"}
-                  </React.Fragment>             
-                }
-              />
-            </ListItem>
-            <Divider variant="inset" /> 
-          </Card>
+          <ListCard 
+            title={ toolkit }
+            subTitle={ tools }
+            items={ toolItems }
+          />
         </div>
-
-
-
-          
+     
+        <div className='list'>
+          <ListCard 
+            title={ languages }
+            subTitle={ syntax }
+            items={ languageItems }
+          />
+        </div>      
       </div>
+
+
+
+      
+      
+
 
 
 
