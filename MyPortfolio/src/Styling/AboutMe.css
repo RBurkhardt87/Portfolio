@@ -2,10 +2,11 @@
 
 .lists-container {
     display: flex;
+    
 }
 
 .list {
-    width: 500px;
+    width: 400px;
     margin: 20px;
     padding:10px;
 }

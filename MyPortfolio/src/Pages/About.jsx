@@ -119,42 +119,267 @@ const About = () => {
             </ListItem>
             <Divider variant="inset" />       
           </Card>
+        </div>     
+        
+        <div className='list'>
+          <Card variant="outlined">
+            <div className="list-header">            
+              <Typography variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
+                My Developer Toolkit:
+              </Typography>            
+              <ListSubheader style={{ fontStyle: 'italic', fontWeight: 400 }}>
+                The Tools That Power the Process
+              </ListSubheader>
+              <Divider style={{ marginTop: '0.5rem' }} />
+            </div>
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      React
+                    </Typography>
+                    {" — for building dynamic, component-based UIs"}
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Spring Boot
+                    </Typography>
+                    {" — Creating robust backend services"}
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      MySQL
+                    </Typography> 
+                    {" — Relational database management and query integration"}     
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Git & GitHub                      
+                    </Typography>
+                    {" — Version control and collaboration"}
+                  </React.Fragment>              
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Postman
+                    </Typography> 
+                    {" — API testing and exploration"}
+                  </React.Fragment>             
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" /> 
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Figma
+                    </Typography> 
+                    {" — Wireframing and basic UI mockups"}
+                  </React.Fragment>             
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Slack & Zoom
+                    </Typography> 
+                    {" — Team communication and collaboration"}
+                  </React.Fragment>             
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />  
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Netlify
+                    </Typography> 
+                    {" — CURRENTLY AM STARTING ON LEARNING THIS"}
+                  </React.Fragment>             
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />               
+          </Card>
         </div>
 
         <div className='list'>
           <Card variant="outlined">
-            <h3>⚙️ My Developer Toolkit</h3>
-            
-            <ul>
-              <li>React -- for building dynamic, component-based UIs</li>
-              <li>Spring Boot -- Creting robust backend services</li>
-              <li>MySQL -- Relational database management and query integration</li>
-              <li>Git & GitHub -- Version control and collaboration</li>
-              <li>Postman -- API testing and exploration</li>
-              <li>Figma -- Wireframing and basic UI mockups</li>
-              <li>Slack -- Team communication and collaboration</li>
-            </ul>
-            <p>NOTES: add Netlify once I learn to deploy applications</p>
-          </Card>
-        </div>
-      </div>
-      <div className='lists-container'>
-        <div className='list'>
-          <Card variant="outlined">
-            <div className='list-header'>
-              <ListItemText 
-                primary="Languages"
-              /> 
+            <div className="list-header">            
+              <Typography variant="h5" component="h2" style={{ fontWeight: 'bold' }}>
+                My Developer Languages:
+              </Typography>            
+              <ListSubheader style={{ fontStyle: 'italic', fontWeight: 400 }}>
+                The Syntax Behind the Systems
+              </ListSubheader>
+              <Divider style={{ marginTop: '0.5rem' }} />
             </div>
-            <ul>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>HTML5</li>
-              <li>CSS3</li>        
-            </ul>
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      JavaScript
+                    </Typography>
+                    {" — My go-to for building interactive UIs"}
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      Java
+                    </Typography>
+                    {" — Used in backend services with Spring Boot"}
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      SQL
+                    </Typography> 
+                    {" — Writing queries and managing databases"}     
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      HTML5                      
+                    </Typography>
+                    {" — Structuring semantic, accessible content"}
+                  </React.Fragment>              
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" />
+            <ListItem>
+              <ListItemText
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      component="span"
+                      variant="body2"
+                      sx={{ color: 'text.primary', display: 'inline' }}
+                    >
+                      CSS3
+                    </Typography> 
+                    {" — Styling responsive and consistent layouts"}
+                  </React.Fragment>             
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" /> 
           </Card>
         </div>
+
+
+
+          
+      </div>
+
+
+
+
+      
+      <div>
 
         <div className='list'>
           <Card variant="outlined">
