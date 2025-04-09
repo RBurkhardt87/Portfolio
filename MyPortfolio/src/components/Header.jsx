@@ -10,7 +10,7 @@ const Header = () => {
     
     <div className="header">
       <h1>Rachel Burkhardt</h1>
-      <h3>An Aspiring Web Developer</h3>
+      <h3>Aspiring Web Developer | Building With Purpose, Designing for People</h3>
     </div>
     
   )
