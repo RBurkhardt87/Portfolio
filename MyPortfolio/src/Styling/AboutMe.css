@@ -1,0 +1,16 @@
+
+
+.lists-container {
+    display: flex;
+}
+
+.list {
+    width: 500px;
+    margin: 20px;
+    padding:10px;
+}
+
+.list-header {
+    text-align: center;
+    margin-top: 15px;
+}

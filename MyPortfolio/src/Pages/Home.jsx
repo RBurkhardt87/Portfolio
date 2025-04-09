@@ -9,7 +9,7 @@ const Home = () => {
         <br />
         <p>Have a picture on the left side</p>
         <br />
-        <p>Hi, I’m Rachel Burkhardt—restaurant industry vet turned web developer. I traded cocktails for code, and now I’m serving up clean UI and real-world solutions.</p>
+        <p>Hi, I'm Rachel Burkhardt—restaurant industry vet turned web developer. I traded cocktails for code, and now I'm serving up clean UI and real-world solutions.</p>
         <br />
         <p>👉 <a href="/about-me">Learn more about me</a></p>  
         <br />
