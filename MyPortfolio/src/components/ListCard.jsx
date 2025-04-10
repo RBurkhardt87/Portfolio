@@ -13,7 +13,7 @@ export default function ListCard({ title, subTitle, items }) {
                             { title }
                         </Typography> 
                         {subTitle && (
-                            <ListSubheader sx={{ fontStyle: 'italic', fontWeight: 550, backgroundColor: 'rgba(152, 164, 158, 0.43)', color: '' }}>
+                            <ListSubheader sx={{ fontStyle: 'italic', fontWeight: 550, backgroundColor: 'rgba(152, 164, 158, 0.43)', }}>
                                 {subTitle}
                             </ListSubheader>
                         )}            
