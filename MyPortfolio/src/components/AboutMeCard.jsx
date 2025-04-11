@@ -1,15 +1,16 @@
 import React from 'react'
 import { Typography } from '@mui/material';
 import '../Styling/AboutMe.css';
-import ContactCard from './ContactCard';
+
+
+
+//TODO: Fix the "Learn About Me..." title for smaller screens
+
+
 
 const AboutMeCard = () => {
   return (
-      <div>
-        {/* <Typography sx={{ color: 'orangered', fontWeight: 'bold', fontSize: '30px', marginTop: '15px' }}>
-          Learn About Me ...
-        </Typography> */}
-       
+      <div>      
         <div className='story-container'>
           
           <Typography sx={{ color: 'orangered', fontWeight: 'bold', fontSize: '30px', marginTop: '15px' }}>

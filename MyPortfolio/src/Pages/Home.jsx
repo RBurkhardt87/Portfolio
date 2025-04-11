@@ -1,9 +1,12 @@
 import React from 'react'
 
+
+//TODO: Maybe make the navigation bar a hamburger when a screen is smaller so users understand the navigation clearly. Otherwise, or maybe in addition to, there should be a link to "My Projects" and "Resume" from the About Me page just in case user doesn't realize they can swipe through the navbar. 
+
+
 const Home = () => {
   return (
-    <div>
-        
+    <div>        
         <h1>HomePage:</h1>
         <br />
         <br />

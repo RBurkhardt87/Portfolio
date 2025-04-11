@@ -12,7 +12,7 @@ const ProjectList = () => {
         <br />
         <li><a href="/wish-list">Wish List Application</a></li>
         <br />
-        <li>View my very first <a href='https://rburkhardt87.github.io/HTML-Me-Something-Start/'>HTML Project</a> to see how far I have come</li>
+        <li>View my very first <a href='https://rburkhardt87.github.io/HTML-Me-Something-Start/' target="_blank">HTML Project</a> to see how far I have come</li>
       </ul>
       
     </div>
