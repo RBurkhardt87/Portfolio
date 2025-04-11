@@ -9,6 +9,7 @@ import '../Styling/AboutMe.css'
 
 function AboutImage() {
   return (
+    <div className='image-container'>
     <div className='carousel-img'>
     <Carousel fade interval={null}>
       <Carousel.Item>
@@ -37,6 +38,7 @@ function AboutImage() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
     </div>
   );
 }

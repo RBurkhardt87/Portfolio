@@ -46,20 +46,9 @@ const About = () => {
 
   return (
     <div>
-      <Typography sx={{ color: 'orangered', fontWeight: 'bold', fontSize: '30px', marginTop: '15px' }}>
-          Learn About Me ...
-      </Typography>
-      <Typography sx={{ padding: "20px"}}>
-      For over a decade, I worked in <b>customer service</b> and <b>management</b> —serving, bartending, and eventually stepping into both bar and floor manager roles. The real turning point came when I became the bar manager at The Shamrock. Wanting to help the business grow, I took the initiative to build its online presence—launching social media accounts and even designing a website.</Typography>
-      
-      <Typography sx={{ padding: "20px" }}> What started as a creative side project quickly lit a fire in me.
-        <br /> I realized I loved the process—problem solving, designing, and <br /> bringing something to life online.
-      </Typography> 
-
-      <div className='lists-container'> 
-      
-      <AboutImage />
-      <AboutMeCard />
+      <div className='image-container' >
+        <AboutImage />
+        <AboutMeCard />
       </div>
       <div className='lists-container'>
         <div className='list'>
