@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material';
-
+import '../Styling/Projects.css';
 
 
 export default function ProjectCard({ coverImage, altName, title, description, projectLink }) {
 
   return (
-    <Card>
+    <Card className='project-cards'>
       <CardMedia
         component="img"
         alt={ altName }
