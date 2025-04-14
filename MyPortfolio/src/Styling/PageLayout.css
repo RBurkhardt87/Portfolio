@@ -10,7 +10,7 @@ h1 {
 
 .header {
     text-align: center;
-    background-image: url('../images/modern-nature-watercolor-background.jpg');
+    background-image: url('/images/modern-nature-watercolor-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  

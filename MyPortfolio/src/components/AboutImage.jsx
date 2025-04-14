@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap';
-import img1 from '../images/modern-nature-watercolor-background.jpg';
-import img2 from '../images/sea-landscape-with-digital-art-style.jpg';
-import img3 from '../images/sky-landscape-digital-art-style-with-moon.jpg'
+import img1 from "/images/modern-nature-watercolor-background.jpg";
+import img2 from '/images/sea-landscape-with-digital-art-style.jpg';
+import img3 from '/images/sky-landscape-digital-art-style-with-moon.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styling/AboutMe.css'
 
