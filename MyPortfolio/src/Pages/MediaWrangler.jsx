@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Styling/Projects.css';
+import ImagePopup from '../components/ImagePopup';
+import { Typography } from '@mui/material';
 
 const MediaWrangler = () => {
   return (
@@ -84,14 +86,99 @@ const MediaWrangler = () => {
         <br />
         <br />
 
-        <h4>Database Schema: </h4>
-        <p>Include 1 screenshot/diagram of the main tables (Users, Movies, Reviews, Lists, etc.) or a summary of your schema.</p>
 
+
+        <div className='db-section'>
+          <h4>Database Overview: </h4>  
+          <p>Media Wrangler uses a relational MySQL database with 10 tables centered around the User table. All content—reviews, ratings, likes, discussions, events, and movie lists—is tracked by user_id, ensuring personalized and secure user data.</p>
+          <div className='pic-container'>
+            <ImagePopup img="/public/images/DBpicture.png" caption="Click Image to Enlarge" />
+            <ImagePopup img="/public/images/DBpicture2.png" caption="Click Image to Enlarge"  />
+          </div>
+          <p><b>Key relationships:</b></p>
+          <ul>
+            <li>Users can: like, rate, and review movies</li>
+            <li>Reviews can: have multiple comments and replies</li>
+            <li>Users can: participate in discussion boards by asking and answering questions</li>
+            <li>Custom movie lists and event tracking are tied to the user account</li>
+          </ul>           
+          <p>This schema allows for dynamic content, community engagement, and data integrity, supporting features like movie detail pages with like counts, personalized lists, user reviews with ratings, and comment threads.</p>          
+        </div>
+        
         <br />
         <br />
 
-        <h4>Planning & Process: </h4>
-        <p>Since I don't have a public project board for the project -- I can add the two user stories #15 and #18. It will have the user stories written beside and screenshot of the project task. </p>
+        <div className='planning-sec'>
+          <h4>Planning & Process: </h4>
+
+          <div className='section-container'>
+            <ImagePopup img="/public/images/UserStory2.png" caption="Click Image to Enlarge" className="float-left"/>
+            <div className='planning-text'>
+              <p><b>User Story: </b>as a User, I want to be able to click on "add review" button, so that I can write my opinion of the movie</p>
+              <p><b>AC:</b></p>
+              <ol>
+                <li>On movie details page there should be a clickable button that says <b>"add review"</b> (might need to be apart of movie detail page task)</li> 
+                <ul>
+                  <li>once clicked, it will direct you to a movie review form</li>
+                </ul>          
+                <li><b>Movie Review Form</b></li>
+                <ul>
+                  <li>Display movie title and year</li>
+                  <li>Display movie poster art</li>
+                  <li>Watched date field (for journal log)</li>
+                  <li>Review text input box</li>
+                  <li>Add tags option</li>
+                  <li>Give Star rating</li>
+                  <li>"Contains Spoilers" checkbox</li>
+                  <li>Submit Button: which should submit the review & direct user back to their journal page to see it has been posted in their activities </li>
+                </ul>
+              </ol>
+            </div>
+          </div>  
+
+          <br />
+          <br />      
+          <br /> 
+
+          <div className='section-container '>
+            <ImagePopup img="/public/images/UserStory1.png" caption="Click Image to Enlarge" className="float-left"/>
+            <div className='planning-text'>
+              <p><b>User Story: </b>as a User, I want to be able to see the details of the movie I searched, so I can learn more about the movie and/or have journal interactions with the movie.</p>
+              <p><b>AC:</b></p>
+              <ol>
+                <li><b>Movie Detail Card Component</b> that displays that movie data collected from the API</li> 
+                <ul>
+                  <li>Movie Title (Year Release)</li>
+                  <li>Movie Release Date</li>
+                  <li>Movie Genre</li>
+                  <li>Movie Overview</li>
+                  <li>Movie Director(s)</li>
+                  <li>Movie Poster Art Image</li>
+                </ul>          
+                <li><b>Movie Cast Member Card Component</b></li>
+                <ul>
+                  <li>picture</li>
+                  <li>Display movie poster art</li>
+                  <li>name</li>
+                  <li>movie role</li>
+                </ul>
+                <li><b>User Interaction Component</b></li>
+                <ul>
+                  <li>rating button (5 star)</li>
+                  <li>like button</li>
+                  <li>add to want to watch list</li>
+                  <li>add a movie review</li>
+                </ul>
+                <li><b>User Review Interaction Features</b></li>
+                <ul>
+                  <li>like review button</li>
+                  <li>like review counter</li>
+                  <li>add comment button</li>
+                </ul>
+              </ol>
+            </div>
+          </div>           
+        </div>
 
         <br />
         <br />
