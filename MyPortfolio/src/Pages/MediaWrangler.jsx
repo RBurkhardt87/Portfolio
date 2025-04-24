@@ -2,8 +2,42 @@ import React from 'react'
 import '../Styling/Projects.css';
 import ImagePopup from '../components/ImagePopup';
 import { Typography } from '@mui/material';
+import ListCard from '../components/ListCard';
+import ProjectFeatureCard from '../components/ProjectFeatureCard';
 
 const MediaWrangler = () => {
+
+  const coreFeatures = "Core Features";  
+  const featureItems = [
+    { text: "User authentication and account management"},
+    { text: "Movie search with streaming info"},
+    { text: "Create custom lists (e.g., Favorites, Watchlist)"},
+    { text: "Write, like, and comment on reviews"},
+    { text: "Review journal (edit & delete)"},
+    { text: "Random movie generator"}, 
+    { text: "Release calendar"}, 
+    { text: "Community discussion board"}
+  ];
+
+  const techStack = "Tech Stack";
+  const stackItems = [
+    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
+    {label: "Frontend: ", text: "React, Material-UI (MUI), Formik"},
+    {label: "External API: ", text: "TMDB"}    
+  ];
+
+  const links = "Project Links"
+  const linkItems = [
+    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
+    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
+    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
+    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
+  ]
+
+
+
+
+
   return (
     <div>
       
@@ -79,7 +113,11 @@ const MediaWrangler = () => {
                 <li><b>Frontend:</b> React, Material-UI (MUI), Formik</li>
                 <li><b>External API:</b> TMDB</li>
               </ul>     
-            </div>      
+            </div>  
+
+        
+            
+             
 
             <div className='section-card'>
               <h4>Core Features</h4>
@@ -98,6 +136,23 @@ const MediaWrangler = () => {
         </section>
         <br />
         <br />
+
+        <div className='section-group'>
+          <div className='section-card'>
+            <ProjectFeatureCard title={ coreFeatures } items={ featureItems } /> 
+          </div>
+
+          <div className='section-card'>
+            <ProjectFeatureCard title={ techStack } items={ stackItems } />
+          </div>
+
+          <div className='section-card'>
+            <ProjectFeatureCard title={ techStack } items={ stackItems } />
+          </div>
+        </div>
+      
+        
+        
 
         <section id="database-overview">
         <div className='section-container'>

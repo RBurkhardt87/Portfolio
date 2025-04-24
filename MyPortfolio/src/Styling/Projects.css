@@ -134,9 +134,10 @@ p, li {
   
 h4 {
     font-size: 1.75rem;
-    color: #333;
+    /* color: #333; */
     margin-top: 60px;
     margin-bottom: 20px;
+    color: orangered;
 }
 
 
@@ -155,15 +156,15 @@ h4 {
   
 .section-card {
     flex: 1 1 300px;
-    background-color: #fdfdfd;
+    background-color: rgba(231, 205, 220, 0.54) ;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .section-card h4 {
-    margin-bottom: 1rem;
-    color: #333;
+    color: orangered;
+    text-align: center;
 }
 
 .section-card ul {
@@ -188,6 +189,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    flex-wrap: wrap;
   }
   
 
