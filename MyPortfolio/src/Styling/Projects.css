@@ -190,7 +190,11 @@ a:hover {
     justify-content: space-around;
     margin: 20px 0;
     flex-wrap: wrap;
-  }
+}
+
+.nav-bar a:hover {
+    text-decoration: none;
+}
   
 
 

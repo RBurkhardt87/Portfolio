@@ -1,50 +1,19 @@
 import React from 'react'
 import '../Styling/Projects.css';
 import ImagePopup from '../components/ImagePopup';
-import { Typography } from '@mui/material';
-import ListCard from '../components/ListCard';
-import ProjectFeatureCard from '../components/ProjectFeatureCard';
 import PlainListCard from '../components/PlainListCard';
+import { techStack, coreFeatures, links, MWFeatures, MWLinks, MWStackItems } from '../data/ProjectData';
+
 
 const MediaWrangler = () => {
 
-  const coreFeatures = "Core Features";  
-  const featureItems = [
-    { text: "User authentication and account management"},
-    { text: "Movie search with streaming info"},
-    { text: "Create custom lists (e.g., Favorites, Watchlist)"},
-    { text: "Write, like, and comment on reviews"},
-    { text: "Review journal (edit & delete)"},
-    { text: "Random movie generator"}, 
-    { text: "Release calendar"}, 
-    { text: "Community discussion board"}
-  ];
-
-  const techStack = "Tech Stack";
-  const stackItems = [
-    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
-    {label: "Frontend: ", text: "React, Material-UI (MUI), Formik"},
-    {label: "External API: ", text: "TMDB"}    
-  ];
-
-  const links = "Project Links"
-  const projectLinks = [
-    { label: "GitHub — ", text: "Original Repo", href: "https://github.com/RBurkhardt87/media-wrangler" },
-    { label: "GitHub — ", text: "Expansion Repo", href: "https://github.com/RBurkhardt87/media-wrangler-expand" },
-    { label: "Project Demo Video — ", text: "Coming Soon"},
-    { label: "Project Presentation — ", text: "Slideshow", href: "https://docs.google.com/presentation/d/1Q6HOewM0bPnU61V9ypXlkjknPRM4q6VMtil-CI6yPhs/present" }
-  ];
-
-
-
   return (
-    <div>
-      
+    <div>      
       <section id="intro">
         <h1>Welcome to Media Wrangler</h1>
 
-          <p>Learn about our full-stack movie-tracking app, explore the features, and dive into its technical details. Use the links below to navigate directly to any section:</p>
-          <nav class="section-nav">
+          <p>Learn about our full-stack movie-tracking app, explore the features, and dive into its technical details. Use the links below to jump to any section:</p>
+          <nav className="section-nav">
             <a href="#what-and-why">The What and Why of Media Wrangler</a>
             <a href="#links-stack-features">Project Links, Tech Stack and Core Features</a>
             <a href="#database-overview">Database Overview</a>
@@ -89,9 +58,9 @@ const MediaWrangler = () => {
         
         <section id="links-stack-features">
           <div className='section-group'>        
-            <PlainListCard title={ coreFeatures } items={ featureItems } />       
-            <PlainListCard title={ techStack } items={ stackItems } />       
-            <PlainListCard title={ links } items={ projectLinks } />          
+            <PlainListCard title={ coreFeatures } items={ MWFeatures } />       
+            <PlainListCard title={ techStack } items={ MWStackItems } />       
+            <PlainListCard title={ links } items={ MWLinks } />          
           </div>
         </section>    
 
@@ -101,8 +70,8 @@ const MediaWrangler = () => {
             <h4>Database Overview: </h4>  
             <p>Media Wrangler uses a relational MySQL database with 10 tables centered around the User table. All content—reviews, ratings, likes, discussions, events, and movie lists—is tracked by user_id, ensuring personalized and secure user data.</p>
             <div className='pic-container'>
-              <ImagePopup img="/public/images/DBpicture.png" caption="Click Image to Enlarge" />
-              <ImagePopup img="/public/images/DBpicture2.png" caption="Click Image to Enlarge"  />
+              <ImagePopup img="/images/DBpicture.png" caption="Click Image to Enlarge" />
+              <ImagePopup img="/images/DBpicture2.png" caption="Click Image to Enlarge"  />
             </div>
             <p><b>Key relationships:</b></p>
             <ul>
@@ -121,7 +90,7 @@ const MediaWrangler = () => {
         <section id="planning-process">
           <h4>Planning & Process:</h4>
           <div className='section-container right'>
-            <ImagePopup img="/public/images/UserStory2.png" caption="Click Image to Enlarge" />
+            <ImagePopup img="/images/UserStory2.png" caption="Click Image to Enlarge" />
             <div className='section-text'>
               <h5>User Story Example 1: </h5>
               <p>As a User, I want to be able to click on "add review" button, so that I can write my opinion of the movie</p>
@@ -150,7 +119,7 @@ const MediaWrangler = () => {
         <br />  
 
           <div className='section-container'>
-            <ImagePopup img="/public/images/UserStory1.png" caption="Click Image to Enlarge"/>
+            <ImagePopup img="/images/UserStory1.png" caption="Click Image to Enlarge"/>
             <div className='section-text'>
               <h5>User Story Example 2:</h5>
               <p>As a User, I want to be able to see the details of the movie I searched, so I can learn more about the movie and/or have journal interactions with the movie.</p>
