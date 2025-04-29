@@ -4,6 +4,7 @@ import ImagePopup from '../components/ImagePopup';
 import { Typography } from '@mui/material';
 import ListCard from '../components/ListCard';
 import ProjectFeatureCard from '../components/ProjectFeatureCard';
+import PlainListCard from '../components/PlainListCard';
 
 const MediaWrangler = () => {
 
@@ -27,14 +28,12 @@ const MediaWrangler = () => {
   ];
 
   const links = "Project Links"
-  const linkItems = [
-    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
-    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
-    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
-    {label: "Backend: ", text: "Java, Spring Boot, Hibernate, MySQL"},
-  ]
-
-
+  const projectLinks = [
+    { label: "GitHub — ", text: "Original Repo", href: "https://github.com/RBurkhardt87/media-wrangler" },
+    { label: "GitHub — ", text: "Expansion Repo", href: "https://github.com/RBurkhardt87/media-wrangler-expand" },
+    { label: "Project Demo Video — ", text: "Coming Soon"},
+    { label: "Project Presentation — ", text: "Slideshow", href: "https://docs.google.com/presentation/d/1Q6HOewM0bPnU61V9ypXlkjknPRM4q6VMtil-CI6yPhs/present" }
+  ];
 
 
 
@@ -89,70 +88,12 @@ const MediaWrangler = () => {
         <br />
         
         <section id="links-stack-features">
-          <div className='section-group'>
-            <div className='section-card'>
-              <h4>Project Links</h4>          
-              <ul>
-                <li><b>GitHub</b> — 
-                  <a href="https://github.com/RBurkhardt87/media-wrangler" target="_blank" rel="noopener noreferrer" >Original Repo</a>
-                </li>
-                <li><b>GitHub</b> — 
-                  <a href="https://github.com/RBurkhardt87/media-wrangler-expand" target='_blank' rel="noopener noreferrer" >Expansion Repo</a>
-                </li>
-                <li><b>Project Demo Video</b> — </li>
-                <li><b>Project Presentation</b> — 
-                  <a href="https://docs.google.com/presentation/d/1Q6HOewM0bPnU61V9ypXlkjknPRM4q6VMtil-CI6yPhs/present" target="_blank">Slideshow</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className='section-card'>
-              <h4>Tech Stack</h4>   
-              <ul>
-                <li><b>Backend:</b> Java, Spring Boot, Hibernate, MySQL</li>
-                <li><b>Frontend:</b> React, Material-UI (MUI), Formik</li>
-                <li><b>External API:</b> TMDB</li>
-              </ul>     
-            </div>  
-
-        
-            
-             
-
-            <div className='section-card'>
-              <h4>Core Features</h4>
-              <ul>
-                <li>User authentication and account management</li>
-                <li>Movie search with streaming info</li>
-                <li>Create custom lists (e.g., Favorites, Watchlist)</li>
-                <li>Write, like, and comment on reviews</li>
-                <li>Review journal (edit & delete)</li>
-                <li>Random movie generator</li>
-                <li>Release calendar</li>
-                <li>Community discussion board</li>
-              </ul>
-            </div>
+          <div className='section-group'>        
+            <PlainListCard title={ coreFeatures } items={ featureItems } />       
+            <PlainListCard title={ techStack } items={ stackItems } />       
+            <PlainListCard title={ links } items={ projectLinks } />          
           </div>
-        </section>
-        <br />
-        <br />
-
-        <div className='section-group'>
-          <div className='section-card'>
-            <ProjectFeatureCard title={ coreFeatures } items={ featureItems } /> 
-          </div>
-
-          <div className='section-card'>
-            <ProjectFeatureCard title={ techStack } items={ stackItems } />
-          </div>
-
-          <div className='section-card'>
-            <ProjectFeatureCard title={ techStack } items={ stackItems } />
-          </div>
-        </div>
-      
-        
-        
+        </section>    
 
         <section id="database-overview">
         <div className='section-container'>

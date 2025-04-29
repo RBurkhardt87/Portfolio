@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { List, ListItem, ListItemText, Typography } from '@mui/material';
-import StarIcon from '@mui/icons-material/Star';
+
 
 export default function ProjectFeatureCard ({ title, items }) {
   return (
