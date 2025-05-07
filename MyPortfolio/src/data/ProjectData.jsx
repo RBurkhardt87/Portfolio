@@ -54,8 +54,26 @@ const BBLinks = [
 
 
 //Wishlist Application Project Lists
+const WLStackItems = [
+  { label: "Backend: ", text: "Java, Spring Boot, Hibernate (JPA), MySQL" },
+  { label: "Frontend: ", text: "Thymeleaf (server-side rendering), Bootstrap, CSS" }
+];
 
+const WLFeatures = [
+  { text: "Create, view, update, and delete wish list items" },
+  { text: "Add item details such as name, description, price, and store info" },
+  { text: "Server-rendered pages using Thymeleaf templates" },
+  { text: "Form validation for required fields" },
+  { text: "Persistent data storage using MySQL" },
+  { text: "Minimalist design with Bootstrap and custom CSS" }
+];
+
+const WLLinks = [
+  { label: "GitHub — ", text: "Original Repo", href: "https://github.com/RBurkhardt87/christmas-list" },
+  { label: "Project Demo Video — ", text: "Coming Soon"},
+  { label: "Project Presentation — ", text: "Coming Soon"}
+];
 
 
 // eslint-disable-next-line react-refresh/only-export-components
-export {  techStack, coreFeatures, links, MWFeatures, MWLinks, MWStackItems, BBFeatures, BBLinks, BBStackItems };
+export {  techStack, coreFeatures, links, MWFeatures, MWLinks, MWStackItems, BBFeatures, BBLinks, BBStackItems, WLFeatures, WLLinks, WLStackItems };
