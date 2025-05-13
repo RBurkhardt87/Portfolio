@@ -1,7 +1,4 @@
 import { Carousel } from 'react-bootstrap';
-// import img1 from "/images/modern-nature-watercolor-background.jpg";
-// import img2 from '/images/sea-landscape-with-digital-art-style.jpg';
-// import img3 from '/images/sky-landscape-digital-art-style-with-moon.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styling/AboutMe.css'
 
@@ -13,7 +10,7 @@ function AboutImage({ img1, img2, img3 }) {
     <div className='carousel-img'>
     <Carousel fade interval={null}>
       <Carousel.Item>
-        <img className="carousel-img" src={img1} alt="Slide 1" />
+        <img className="carousel-img" src={img1} alt="slide 1" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

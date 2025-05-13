@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 
 //TODO: Maybe make the navigation bar a hamburger when a screen is smaller so users understand the navigation clearly. Otherwise, or maybe in addition to, there should be a link to "My Projects" and "Resume" from the About Me page just in case user doesn't realize they can swipe through the navbar. 
@@ -10,6 +11,7 @@ const Home = () => {
         <h1>HomePage:</h1>
         <br />
         <br />
+        
         <p>Have a picture on the left side</p>
         <br />
         <p>Hi, I'm Rachel Burkhardt—restaurant industry vet turned web developer. I traded cocktails for code, and now I'm serving up clean UI and real-world solutions.</p>

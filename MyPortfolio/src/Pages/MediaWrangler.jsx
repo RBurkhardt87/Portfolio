@@ -70,8 +70,8 @@ const MediaWrangler = () => {
             <h4>Database Overview: </h4>  
             <p>Media Wrangler uses a relational MySQL database with 10 tables centered around the User table. All content—reviews, ratings, likes, discussions, events, and movie lists—is tracked by user_id, ensuring personalized and secure user data.</p>
             <div className='pic-container'>
-              <ImagePopup img="/images/DBpicture.png" caption="Click Image to Enlarge" />
-              <ImagePopup img="/images/DBpicture2.png" caption="Click Image to Enlarge"  />
+              <ImagePopup img="/images/MediaWrangler/DBpicture.png" caption="Click Image to Enlarge" />
+              <ImagePopup img="/images/MediaWrangler/DBpicture2.png" caption="Click Image to Enlarge"  />
             </div>
             <p><b>Key relationships:</b></p>
             <ul>
@@ -90,7 +90,7 @@ const MediaWrangler = () => {
         <section id="planning-process">
           <h4>Planning & Process:</h4>
           <div className='section-container right'>
-            <ImagePopup img="/images/UserStory2.png" caption="Click Image to Enlarge" />
+            <ImagePopup img="/images/MediaWrangler/UserStory2.png" caption="Click Image to Enlarge" />
             <div className='section-text'>
               <h5>User Story Example 1: </h5>
               <p>As a User, I want to be able to click on "add review" button, so that I can write my opinion of the movie</p>
@@ -119,7 +119,7 @@ const MediaWrangler = () => {
         <br />  
 
           <div className='section-container'>
-            <ImagePopup img="/images/UserStory1.png" caption="Click Image to Enlarge"/>
+            <ImagePopup img="/images/MediaWrangler/UserStory1.png" caption="Click Image to Enlarge"/>
             <div className='section-text'>
               <h5>User Story Example 2:</h5>
               <p>As a User, I want to be able to see the details of the movie I searched, so I can learn more about the movie and/or have journal interactions with the movie.</p>

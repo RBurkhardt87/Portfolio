@@ -14,7 +14,7 @@ const projectsList = [
     projectLink: "/media-wrangler"
   },
   {
-    coverImage: "/images/BBHomePageZoom.png",
+    coverImage: "/images/BegoniaBabyBreastfeeding/BBHomePageZoom.png",
     altName: "breastfeeding app homepage image",
     title: "Begonia Baby Breastfeeding",
     description: "A baby care tracker I started building as both a parent and an International Board Certified Lactation Consultant. The goal is to support new parents (and the professionals they work with) by making it easier to track things like nursing sessions, diaper changes, and sleep. The forms are super detailed—built with care to actually be useful. Right now, everything stores in a MySQL database, and I’m working toward turning that data into helpful summaries and trends. Still a work in progress, but its one Im proud of.",

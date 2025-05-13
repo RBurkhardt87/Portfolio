@@ -3,8 +3,82 @@ import '../Styling/Projects.css';
 import ImagePopup from '../components/ImagePopup';
 import PlainListCard from '../components/PlainListCard';
 import { techStack, coreFeatures, links, BBFeatures, BBLinks, BBStackItems } from '../data/ProjectData';
+import CarouselImages from "../components/CarouselImages";
+
+import BBRegistration from "/images/BegoniaBabyBreastfeeding/BBRegistration.png";
+import BBLogin from "/images/BegoniaBabyBreastfeeding/BBLogin.png";
+import BBNursingLog1 from "/images/BegoniaBabyBreastfeeding/BBNursingLog1.png";
+import BBNursingLog2 from "/images/BegoniaBabyBreastfeeding/BBNursingLog2.png";
+import BBNursingLog3 from "/images/BegoniaBabyBreastfeeding/BBNursingLog3.png";
+import BBNursingLog4 from "/images/BegoniaBabyBreastfeeding/BBNursingLog4.png";
+import BBDiaperLog1 from "/images/BegoniaBabyBreastfeeding/BBDiaperLog1.png";
+import BBDiaperLog2 from "/images/BegoniaBabyBreastfeeding/BBDiaperLog2.png";
+import BBDiaperLog3 from "/images/BegoniaBabyBreastfeeding/BBDiaperLog3.png";
+import BBSleepLog1 from "/images/BegoniaBabyBreastfeeding/BBSleepLog1.png";
+import BBHomePageZoom from "/images/BegoniaBabyBreastfeeding/BBHomePageZoom.png";
+
+
 
 const BreastFeedingApp = () => {
+
+    const BBImageArray = [
+      {
+        image: BBHomePageZoom,
+        alt: "Home Page Slide",
+        label: "Begonia Baby Home Page"
+      },
+      {
+        image: BBRegistration,
+        alt: "Registration Slide",
+        label: "Begonia Baby Registration Page",
+      },
+      {
+        image: BBLogin,
+        alt: "Login Slide",
+        label: "Begonia Baby Login Page",
+      },
+      {
+        image: BBNursingLog1,
+        alt: "Nursing Log Slide 1",
+        label: "Nursing Log Slide 1"
+      },
+      {
+        image: BBNursingLog2 ,
+        alt: "Nursing Log Slide 2",
+        label: "Nursing Log Slide 2"
+      },
+      {
+        image: BBNursingLog3,
+        alt: "Nursing Log Slide 3",
+        label: "Nursing Log Slide 3",
+      },
+      {
+        image: BBNursingLog4 ,
+        alt: "Nursing Log Slide 4",
+        label: "Nursing Log Slide 4",
+      },
+      {
+        image: BBDiaperLog1 ,
+        alt: "Diaper Log Slide 1",
+        label: "Diaper Log Slide 1",
+      },
+      {
+        image: BBDiaperLog2,
+        alt: "Diaper Log Slide 2",
+        label: "Diaper Log Slide 2",
+      },
+      {
+        image: BBDiaperLog3,
+        alt: "Diaper Log Slide 3",
+        label: "Diaper Log Slide 3",
+      },
+      {
+        image: BBSleepLog1,
+        alt: "Sleep Log Slide 1",
+        label: "Sleep Log Slide 1",
+      }
+    ];
+
   return (
     <div>      
       <section id="intro">
@@ -16,9 +90,9 @@ const BreastFeedingApp = () => {
             <a href="#links-stack-features">Project Links, Tech Stack and Core Features</a>
             <a href="#database-overview">Database Overview</a>
             {/* <a href="#planning-process">Planning & Process</a> */}
-            <a href="#application-images">Project Images</a>
             <a href="#future-improvements">Future Improvements</a>
             <a href="#final-thoughts">Final Thoughts</a>
+            <a href="#application-images">Project Images</a>
           </nav>
         </section>
 
@@ -74,10 +148,6 @@ const BreastFeedingApp = () => {
         </div>      
         </section>
 
-        <section id="application-images">
-          
-        </section>
-
         {/* <section id="planning-process">
           <h4>Planning & Process:</h4>        
         </section>                   */}
@@ -115,8 +185,21 @@ const BreastFeedingApp = () => {
         <br />
         <br />
 
-        <p><b>Back to</b> <a href="#intro">the Top</a></p>
-        <p><b>Back to</b> <a href="/projects">Project List</a></p> 
+        <section id="application-images">
+          <div className='container'>
+            {/* <h4>Project Images: </h4>
+            <p>Check out how the project is developing!</p> */}
+              <CarouselImages imageArray={ BBImageArray }/>
+          </div>         
+        </section>
+        <br />
+        <br />
+        
+        <div>
+          <p><b>Back to</b> <a href="#intro">the Top</a></p>
+          <p><b>Back to</b> <a href="/projects">Project List</a></p>
+        </div>
+         
             
     </div>
   )
