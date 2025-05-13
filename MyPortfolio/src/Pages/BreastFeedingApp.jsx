@@ -16,6 +16,7 @@ const BreastFeedingApp = () => {
             <a href="#links-stack-features">Project Links, Tech Stack and Core Features</a>
             <a href="#database-overview">Database Overview</a>
             {/* <a href="#planning-process">Planning & Process</a> */}
+            <a href="#application-images">Project Images</a>
             <a href="#future-improvements">Future Improvements</a>
             <a href="#final-thoughts">Final Thoughts</a>
           </nav>
@@ -71,6 +72,10 @@ const BreastFeedingApp = () => {
             <p>This initial schema establishes a strong foundation for future expansion, including features like journal entries, milestone tracking, reminder systems, and data analysis to help parents monitor trends over days, weeks, and months.</p>            
           </div>
         </div>      
+        </section>
+
+        <section id="application-images">
+          
         </section>
 
         {/* <section id="planning-process">

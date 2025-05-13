@@ -100,7 +100,7 @@ const WishList = () => {
         <div className='section-container'>
           <div className='section-text'>
             <h4>Final Thoughts: </h4>
-            <p>Media Wrangler reflects how far I've come in full-stack development—from backend architecture to thoughtful UI design to user    engagement. It also demonstrates how collaboration and planning (especially in group projects) elevate functionality and experience.</p>
+            <p>This project is special to me because it represents where I started and how far I’ve come in my development journey. What began as a simple way to help my son keep track of his wish list evolved into a meaningful learning experience. It allowed me to dive into full-stack development with Spring Boot, Thymeleaf, Hibernate, and MySQL, and gave me hands-on experience building something functional from the ground up. The app still serves as inspiration for my ongoing work — it's a reminder of the importance of creating tools that make life easier and more fun. While it’s a basic app right now, I’m excited to rebuild the frontend with React and continue improving it, as I keep learning and pushing my skills forward.</p>
           </div>
         </div>
       </section>
@@ -117,16 +117,3 @@ const WishList = () => {
 
 export default WishList
 
-
-
-
-// What I Learned
-// Building and connecting a relational database
-
-// Using Thymeleaf to render dynamic views
-
-// Creating RESTful routes and handling form data
-
-// The power of building something small that actually gets used
-
-// This project is special to me because it represents where I started and how far I’ve come. It also continues to serve as inspiration for building tools that make life easier and more fun.

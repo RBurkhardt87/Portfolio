@@ -4,7 +4,7 @@ import '../Styling/Resume.css';
 const Resume = () => {
   return (
     <div>
-      <h1>Resume Page:</h1>
+      
       <div className='pdf-reader-container'>
         <embed
           src="/RachelBurkhardtResume2025PDF.pdf"

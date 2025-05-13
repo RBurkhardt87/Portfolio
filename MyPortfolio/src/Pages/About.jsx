@@ -6,6 +6,10 @@ import ContactCard from '../components/ContactCard';
 import AboutImage from '../components/AboutImage';
 import AboutMeCard from '../components/AboutMeCard';
 
+import img1 from "/images/modern-nature-watercolor-background.jpg";
+import img2 from '/images/sea-landscape-with-digital-art-style.jpg';
+import img3 from '/images/sky-landscape-digital-art-style-with-moon.jpg';
+
 const About = () => {
 
   const dna = "My Developer DNA:";
@@ -47,7 +51,7 @@ const About = () => {
   return (
     <div>
       <div className='image-container' >
-        <AboutImage />
+        <AboutImage img1={img1} img2={img2} img3={img3} />
         <AboutMeCard />
       </div>
       <div className='lists-container'>
